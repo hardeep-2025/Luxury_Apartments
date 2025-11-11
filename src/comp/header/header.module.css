@@ -1,0 +1,190 @@
+.header{
+    display: flex;
+background: #798AC1;
+padding: 2px 40px;
+    justify-content: space-between;
+}
+*{
+padding: 0px;
+margin: 0px;
+}
+.HeaderLogo>img{
+width: 130px;
+opacity: 1;
+}
+.HeaderLogoContext{
+width: 110px;
+height: 27.9px;
+opacity: 1;
+top: -112.63px;
+left: 32px;
+position: relative;
+font-family: "montserrat-SemiBold";
+font-weight: 600;
+color: #FFFFFF;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.HeaderContent{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+} 
+.HeaderEnqureBtn{
+width: 121px;
+/* height: 30px; */
+opacity: 1;
+top: 28px;
+left: 992px;
+border: none;
+border-radius: 25px;
+background: #FF8C27;
+opacity: 1;
+font-family: "montserrat-SemiBold";
+font-weight: 600;
+font-size: 15px;
+color: #000000;
+cursor: pointer;
+padding: 4px;
+}
+.HeaderPhonePng{
+width: 22px;
+height: 22px;
+position: relative;
+opacity: 1;
+/* top: 30px; */
+left: 12px;
+
+
+}
+.HeaderPhoneNO{
+height: 18px;
+opacity: 1;
+position: relative;
+top: 10px;
+/* left: 1166px; */
+font-family: "montserrat-Bold";
+font-weight: 700;
+font-size: 15px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+.HeaderPhoneNOList{
+    display: none;
+}
+.HeaderMenu{
+opacity: 1;
+background: transparent;
+border: none;
+cursor: pointer;
+margin-right: 0px !important;
+}
+.HeaderMenu:hover{
+    background: transparent;
+}
+.MenuListItem>li{
+margin-bottom: 20px;
+list-style: none;
+}
+.MenuBar{
+background-color: #798AC1;
+}
+@media (max-width:610px){
+/* .HeaderEnqureBtn, .HeaderPhoneNO, .HeaderPhonePng{
+    display: none;
+} */
+ .header{
+padding:2px 20px ;
+ }
+
+ .HeaderLogo>img{
+    width: 140px;
+ }
+ .HeaderEnqureBtn{
+    font-size: 14px;
+    height: auto;
+    width: auto;
+ }
+ .HeaderPhonePng{
+    height: 20px;
+    width: 20px;
+    left: 0px;
+ }
+ .HeaderPhoneNO{
+    font-size: 14px;
+ }
+ .HeaderContent{
+gap: 12px;
+
+ }
+ .MenuPng{
+    width: 30px;
+ }
+}
+@media (max-width:540px){
+.HeaderEnqureBtn{
+font-size: 12px;
+}
+.HeaderPhoneNO{
+    font-size: 12px;
+}
+.HeaderPhonePng{
+    left: 6px;
+}
+.HeaderContent{
+    gap: 10px;
+}
+.MenuPng{
+    background-color: transparent;
+    background:transparent;
+    width: 25px;
+}
+.HeaderLogo>img{
+    width: 120px;
+}
+}
+@media(max-width:480px){
+    .HeaderLogo>img{
+        width: 100px;
+    }
+    .HeaderEnqureBtn, .HeaderPhoneNO{
+        font-size: 10px;
+
+
+    }
+        .header{
+        padding: 2px 4px;
+    }
+}@media(max-width:375px){
+
+    .HeaderLogo>img{
+        width: 90px;
+    }
+    .HeaderEnqureBtn, .HeaderPhoneNO{
+        font-size: 9px;
+
+    }
+    .HeaderPhonePng{
+    width: 18px;
+}.MenuPng{
+    width: 20px;
+}
+.HeaderContent{
+    gap: 8px;
+}
+}
+@media (max-width:345px){
+    .HeaderLogo>img{
+     width: 80px;
+    }
+    .HeaderContent{
+        gap: 5px;
+    }.HeaderPhonePng{
+    left: 2px;
+}
+}
