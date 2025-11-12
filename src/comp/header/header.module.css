@@ -1,16 +1,35 @@
 .header{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
     display: flex;
 background: #798AC1;
+width: 100%;
+z-index: 1;
 padding: 2px 40px;
     justify-content: space-between;
+
+}
+a {
+  text-decoration: none;
+}a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
 }
 *{
 padding: 0px;
 margin: 0px;
 }
-.HeaderLogo>img{
+.HeaderLogo{
 width: 130px;
 opacity: 1;
+cursor: pointer;
 }
 .HeaderLogoContext{
 width: 110px;
@@ -57,7 +76,7 @@ height: 22px;
 position: relative;
 opacity: 1;
 /* top: 30px; */
-left: 12px;
+/* left: 12px; */
 
 
 }
@@ -73,23 +92,37 @@ font-size: 15px;
 line-height: 100%;
 letter-spacing: 0%;
 color: #FFFFFF;
+cursor: pointer;
 }
 .HeaderPhoneNOList{
     display: none;
 }
+.headerPhoneNoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
 .HeaderMenu{
 opacity: 1;
+width: fit-content;
+height: fit-content;
 background: transparent;
 border: none;
 cursor: pointer;
 margin-right: 0px !important;
+align-content: end;
+padding: 0px;
 }
+
 .HeaderMenu:hover{
     background: transparent;
 }
+
 .MenuListItem>li{
 margin-bottom: 20px;
 list-style: none;
+cursor: pointer;
 }
 .MenuBar{
 background-color: #798AC1;
@@ -102,8 +135,12 @@ background-color: #798AC1;
 padding:2px 20px ;
  }
 
- .HeaderLogo>img{
-    width: 140px;
+ .HeaderLogo{
+    width: 120px;
+
+ }
+ .headerPhoneNoContainer{
+    gap:8px ;
  }
  .HeaderEnqureBtn{
     font-size: 14px;
@@ -133,9 +170,7 @@ font-size: 12px;
 .HeaderPhoneNO{
     font-size: 12px;
 }
-.HeaderPhonePng{
-    left: 6px;
-}
+
 .HeaderContent{
     gap: 10px;
 }
@@ -149,6 +184,9 @@ font-size: 12px;
 }
 }
 @media(max-width:480px){
+    .header{
+        padding: 0px 22px;
+    }
     .HeaderLogo>img{
         width: 100px;
     }
@@ -156,6 +194,10 @@ font-size: 12px;
         font-size: 10px;
 
 
+    }
+    .HeaderPhonePng{
+        height: 15px;
+        width: 15px;
     }
         .header{
         padding: 2px 4px;
@@ -179,7 +221,7 @@ font-size: 12px;
 }
 }
 @media (max-width:345px){
-    .HeaderLogo>img{
+    .HeaderLogo{
      width: 80px;
     }
     .HeaderContent{
@@ -187,4 +229,12 @@ font-size: 12px;
     }.HeaderPhonePng{
     left: 2px;
 }
+}
+
+.HeaderEnqureBtn:hover{
+    background-color: #FFFFFF;
+}
+
+.MenuListItem>li:hover{
+    color: #FF8C27;
 }

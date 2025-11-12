@@ -1,0 +1,224 @@
+.main{
+background-color: #798AC1;
+}
+.main .container .row .col{
+min-height: 707px;
+}
+.main,
+.banner,
+.BannerImgContner{
+    height: 100%;
+}
+.outerDiv{
+    min-height: 707px;
+    height: 100vh;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* top: 100px; */
+    padding-top: 100px;
+    height: 100%;
+    min-height: 707px;
+}
+
+.ContentBanner{
+    position: relative;
+    top: -30px;
+    width: 50%;
+}
+
+.mainHeading{
+    font-family: "montserrat-Black";
+font-size: 60px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FF8C27;
+width: 491px;
+
+
+}
+.line{
+    width: 480px;
+opacity: 1;
+border-width: 2px;
+border: 2px solid #FF8C27;
+position: relative;
+
+}
+.mainSubHeading{
+    width: 550px;
+     font-family: "montserrat-SemiBold";
+font-weight: 600;
+font-size: 35px;
+line-height: 39px;
+letter-spacing: 0%;
+color: #FFFFFF;
+
+}
+
+.subHeading{
+    font-family: "montserrat-SemiBold";
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+
+
+}
+.BannerImgContner{
+    width: 50%;
+}
+.BannerImgContner>img{
+    width: 100%;
+}
+
+@media (min-width:1399px){
+    .BannerImgContner>img{
+        width: auto;
+    }
+
+}@media (max-width:1199px){
+ 
+
+    .mainHeading{
+        font-size: 50px;
+    }
+    .banner{
+        padding-top: 0px;
+}
+   .line{
+    width: 430px;
+   }
+   .mainSubHeading{
+    width: 496px;
+    font-size: 22px;
+    line-height: 32px;
+    position: relative;
+}
+.subHeading{
+    /* line-height: 0%; */
+    font-size: 18px;
+    position: relative;
+}
+.BannerImgContner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BannerImgContner>img{
+    width: 100%;
+}
+}
+@media (max-width:991px){
+
+.main .container .row {
+
+/* min-height: 50vh; */
+overflow: hidden;
+
+}
+.outerDiv{
+    min-height: 507px;
+    height: 70vh;
+}
+.ContentBanner{
+        width: 50%;
+    }
+    .banner{
+        padding-top: 0px;
+        min-height: 500px;
+     }
+    .mainHeading{
+        font-size: 35px;
+    }.line{
+    width: 301px;
+}.mainSubHeading{
+    width: 337px;
+    font-size: 20px;
+    line-height: 25px;
+}.subHeading{
+    font-size: 15px;
+    line-height: 20px;
+    /* width: 320px; */
+}
+.lineBreak{
+    display: block;
+}
+    .BannerImgContner>img{
+        width: 370px;
+    }
+}
+@media (max-width:767px){
+
+  .outerDiv{
+    min-height: 700px;
+    height: 100vh;
+}
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        min-height: 700px;
+        justify-content: center;
+    }
+    .line{
+        width: 75%;
+    }
+    .ContentBanner{
+        /* margin-top: 26%; */
+        padding-top:120px;
+        width: 100%;
+    }
+    .mainHeading{
+       font-size: 45px;
+    }
+    .mainSubHeading{
+        font-size: 21px;
+        line-height: 30px;
+        width: 100%;
+    }
+    .subHeading{
+        font-size: 17px;
+        width: 100%;
+    }
+    .lineBreak{
+        display: inline;
+    }
+    .BannerImgContner{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media (max-width:576px){
+    .mainHeading{
+        font-size: 40px;
+    }
+    .line{
+        width: 80%;
+    }
+    .mainSubHeading{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .subHeading{
+        font-size: 16px;
+    }
+}@media (max-width:474px){
+    .mainHeading{
+        font-size: 30px;
+    }
+    .line{
+        width: 80%;
+    }
+    .mainSubHeading{
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .subHeading{
+        font-size: 15px;
+    }
+}

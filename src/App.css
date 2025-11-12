@@ -12,3 +12,19 @@
   font-family: "montserrat-SemiBold";
   src: url(./comp/Montserrat-SemiBold.ttf);
 }
+@font-face {
+  font-family: "montserrat-Black";
+  src: url(./comp/Montserrat-Black.ttf);
+}
+.Banner-slider{
+  height: 100% !important;
+}
+.Banner-slider .slick-list,
+.Banner-slider .slick-track,
+.Banner-slider .slick-slide > div,
+.Banner-slider .slick-slide {
+    height: 100%;
+}
+@media (max-width:991px){
+
+}

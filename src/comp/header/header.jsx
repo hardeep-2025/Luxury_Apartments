@@ -18,13 +18,14 @@ function Header() {
   return (
       <>
         <header className={Style.header}>
-            <div className={Style.HeaderLogo}>
-                <img src={logo} alt="logo" /> 
+            <div >
+               <a href=" "><img src={logo} alt="logo" className={Style.HeaderLogo} /> </a>
             </div>
             <div className={Style.HeaderContent}>
                 <button className={Style.HeaderEnqureBtn}>Enquire Now</button>
-                    <img src={Phone} className={Style.HeaderPhonePng} alt="" />
-                    <p className={Style.HeaderPhoneNO}>+91 0000000000</p>
+                <div className={Style.headerPhoneNoContainer}> <img src={Phone} className={Style.HeaderPhonePng} alt="" />
+                    <p className={Style.HeaderPhoneNO}> <a href="tel:+91 0000000000">+91 0000000000</a></p></div>
+ 
                     <div><Button variant="primary" onClick={handleShow} className={`me-2  ${Style.HeaderMenu}` }>
                          <img src={menu} className={Style.MenuPng} alt="" /> 
                         </Button></div>
@@ -34,15 +35,17 @@ function Header() {
                         */}
                         <Offcanvas show={show} onHide={handleClose} placement='end'>
                          <Offcanvas.Header closeButton>
-                         <Offcanvas.Title >Menu</Offcanvas.Title>
                           </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <ul className={Style.MenuListItem}>
-                                    <li>Home</li> <hr />
-                                    <li>About_Us</li><hr />
-                                    <li>New Product</li><hr />
-                                    <li>Gallery</li><hr />
-                                    <li>Contact Us</li><hr />
+                                     <li><a href=" ">About the Project</a></li>
+                                     <li><a href=" ">Key Highlights</a></li>
+                                     <li><a href=" ">Price List</a></li>
+                                     <li><a href=" ">Floor Plan</a></li>
+                                     <li><a href=" ">Amenities</a></li>
+                                     <li><a href=" ">Gallery</a></li>
+                                     <li><a href=" "> Seamless Connectivity</a></li>
+                                     <li><a href=" ">Contact Us</a></li>
                                 </ul>
                             </Offcanvas.Body>
                                 </Offcanvas>
