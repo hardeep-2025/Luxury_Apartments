@@ -1,6 +1,8 @@
 .Footer{
     display: flex;
     flex-direction: column;
+    gap: 60px;
+    margin-top: 60px;
 }
 .FooterFirstPart{
     font-family: "montserrat-Medium";
@@ -25,4 +27,81 @@ left: 88px;
     margin-top: 0px;
 height: 120px;
 
+}
+.FooterFirstPart2{
+    width: 30%;
+}
+.FooterFirstPart2Head{
+    font-family: "montserrat-bold";
+font-weight: 700;
+font-size: 18px;
+line-height: 32px;
+letter-spacing: 0%;
+color: #293868;
+
+
+}
+.FooterFirstPart2ListDiv{
+    display: flex;
+}
+.FooterFirstPart2ListStyle{
+    font-family: "montserrat-Medium";
+    list-style: url("./footerImg//fast-forward\ \(6\)\ 1.png");
+font-weight: 400;
+font-size: 15px;
+line-height: 32px;
+letter-spacing: 0%;
+
+}
+.FooterFirstPart3ImgCounter{
+    display: flex;
+    gap: 12px;
+
+}
+.FooterFirstPart3>h6{
+    font-family: "montserrat-bold";
+font-weight: 700;
+font-size: 18px;
+line-height: 32px;
+color: #293868;
+
+}
+.FooterFirstPart3ImgCounter>img{
+width: 33px;
+height: 33px;
+opacity: 1;
+top: 7546px;
+left: 1147px;
+}
+
+.FooterSecoundPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.FooterSecoundPart>h5{
+    font-family: "montserrat-bold";
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 18px;
+line-height: 17px;
+letter-spacing: 0%;
+text-align: center;
+color: #293868;
+}
+.FooterSecoundPart>p{
+    font-family: "montserrat-Medium";
+font-weight: 500;
+font-style: Medium;
+font-size: 15px;
+line-height: 17px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+
+.FooterThirdPart{
+    display: flex;
+    justify-content: space-between;
 }
