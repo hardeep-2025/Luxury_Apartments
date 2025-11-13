@@ -168,7 +168,7 @@ overflow: hidden;
     }
     .ContentBanner{
         /* margin-top: 26%; */
-        padding-top:120px;
+        padding-top:140px;
         width: 100%;
     }
     .mainHeading{
@@ -191,6 +191,7 @@ overflow: hidden;
         align-items: center;
         width: 100%;
         justify-content: center;
+        margin-bottom: 120px;
     }
 }
 @media (max-width:576px){

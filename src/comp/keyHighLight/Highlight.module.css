@@ -1,0 +1,86 @@
+.background{
+    background-image: url("./img/vecteezy_modern-living-room-illustration_22336794\ 1.png");
+    background-color: rgb(17, 17, 61);
+    color: white;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+}
+.mainHead{
+font-family:"montserrat-Bold";
+font-weight: 700;
+font-size: 35px;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.line{
+    width: 269.000000000001px;
+height: 0px;
+opacity: 1;
+border-width: 2px;
+border: 2px solid #FF8C27
+}
+.listDiv{
+display: grid;
+grid-template-columns:repeat(2 ,480px);
+justify-content: space-between;
+width: 100%;
+padding: 30px 0px;
+gap: 25px 30px;
+}
+.listDiv>div{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 0px;
+    gap: 20px;
+}
+.listDiv>div>p{
+    font-family: "montserrat-Medium";
+font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+letter-spacing: 0%;
+
+}
+
+@media (max-width:1199px){
+    .listDiv{
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 15px 30px; */
+    }
+    .listDiv>div>p{
+        font-size: 21px;
+    }
+}
+
+@media (max-width:991px){
+   .listDiv>div>p{
+    font-size: 16px;
+   }
+   .listDiv{
+       /* gap: 25px 25px; */
+   }
+
+}@media (max-width:767px){
+
+   .listDiv{
+       grid-template-columns: repeat(1,1fr);
+       gap: 12px 5px;
+   }
+      .listDiv>div{
+        align-items: center;
+       width: 100%;  
+       margin-top: 0px;
+}
+  .listDiv>div>img{
+    width: 30px;
+  }
+
+}

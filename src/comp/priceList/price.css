@@ -1,0 +1,113 @@
+.priceListContiner>h1{
+    font-family:"montserrat-Bold";
+font-weight: 700;
+font-size: 35px;
+color: #FF8C27;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: center;
+margin: 22px 12px;
+text-decoration: underline;
+text-decoration-color:#FF8C27 ;
+text-underline-offset: 5px;
+
+}
+.TableDiffColor{
+    background-color: #DEE6FF !important;
+
+}
+
+.tableBtn{
+    width: 157px;
+height: 50px;
+border-radius: 50px;
+background: #FF8C27;
+font-family: "montserrat-Medium";
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.PriceListTableBody>tr>td{
+    font-family: "Montserrat-SemiBold";
+font-weight: 600;
+font-size: 15px;
+line-height: 32px;
+letter-spacing: 0%;
+
+}
+.PriceListTableHead>tr>th{
+    background: #282828;
+font-family: "Montserrat-SemiBold";
+font-weight: 600;
+font-size: 15px;
+line-height: 32px;
+letter-spacing: 0%;
+color: white;
+
+}
+.table{
+    border:black .5px solid;
+    /* border: 1px solid #ccc; */
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  table {
+    border: 0;
+  }
+  
+  table thead{
+    border: none;
+    clip: rect(22222);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+   .PriceListTableHead>th{
+    /* color: black; */
+   }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    /* content: attr(data-label); */
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}

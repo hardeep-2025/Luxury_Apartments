@@ -41,7 +41,7 @@ left: 88px;
 
 .FooterFirstPartPra1{
     font-size: 16px;
-    line-height: 17px   ;    
+    line-height: 22px   ;    
     margin-top: 0px;
 /* width: 90%; */
 
@@ -66,7 +66,11 @@ color: #293868;
     padding-left:30px ;
     margin-right: 20px;
 }.FooterFirstPart2ListStyle2>ul{
-    margin-left:30px ;
+    margin-left:0px ;
+    margin-right: 10px;
+}
+.FooterFirstPart2ListStyle2>ul{
+    margin-left:0px ;
     margin-right: 10px;
 }
 
@@ -90,6 +94,7 @@ letter-spacing: 0%;
     font-family: "montserrat-bold";
 font-weight: 700;
 font-size: 18px;
+margin-top: 20px;
 line-height: 32px;
 color: #293868;
 
@@ -128,12 +133,15 @@ letter-spacing: 0%;
 text-align: center;
 
 }
+.FooterThirdcontiner{
+
+    background-color: #798AC1;
+}
 
 .FooterThirdPart{
     display: flex;
     align-items: center;
-    justify-content: space-evenly   ;
-    background-color: #798AC1;
+    justify-content: space-between   ;
     height: 58px;
     /* width: 100vw; */
    opacity: 1;
@@ -142,7 +150,6 @@ text-align: center;
 }
 .FooterThirdPart>div{
 font-family: "montserrat-Medium";
-font-style: Medium;
 font-size: 13px;
 line-height: 17px;
 letter-spacing: 0%;
@@ -181,6 +188,8 @@ text-align: center;
     .FooterFirstPart2ListDiv{
         display: flex;
         flex-direction: column;
+    }
+    .FooterFirstPart3{
     }
 }
 
@@ -250,6 +259,7 @@ text-align: center;
     .FooterThirdPart{
         display: flex;
         flex-direction: column;
+        padding: 6px 0px;
     }
     .FooterFirstPart3>div{
         
@@ -283,9 +293,9 @@ text-align: center;
 }
 
 .FooterFirstPart2ListStyle>ul>li>a:hover{
-   font-family: "montserrat-Bold";
+   font-weight: bolder;
     color: #293868;
 }.FooterFirstPart2ListStyle2>ul>li>a:hover{
-   font-family: "montserrat-Bold";
+    font-weight: bolder;
     color: #293868;
 }

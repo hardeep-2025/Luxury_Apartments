@@ -55,10 +55,21 @@ function Footer() {
    </footer></Col>
       </Row>
     </Container>
-        <div className={Style.FooterThirdPart}>
+        <div className={Style.FooterThirdcontiner}>
+    <Container>
+      <Row>
+        <Col>   
+                <div className={Style.FooterThirdPart}>
+
         <div><span className={Style.underline}><a href=" ">Terms & Conditions</a> </span>and<span className={Style.underline}><a href=" "> Privacy Policy</a></span></div>
         <div>Crafted By: <span className={Style.underline}><a href=" ">IosAndWeb Technologies</a></span></div>
+           </div>
+
+        </Col>
+      </Row>
+    </Container>
     </div>
+
 
 </>
   );
