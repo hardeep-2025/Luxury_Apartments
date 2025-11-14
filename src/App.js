@@ -1,5 +1,5 @@
 import './App.css';
-import Banner from './banner/banner';
+import Banner from './comp/banner/banner';
 import AboutUs from './comp/AboutUs/AboutUs';
 import Footer from './comp/footer/footer';
 import Header from './comp/header/header';
@@ -10,6 +10,7 @@ import PriceList from './comp/priceList/PriceList';
 import Amenities from './comp/Amenities/Amenities';
 import Gallery from './comp/gallery/Gallery';
 import Connectivity from './comp/Connectivity/Connectivity';
+import Enquire from './comp/Enquire Now/Enquire';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -23,10 +24,11 @@ function App() {
                     <HighLight/>
                     <PriceList/>
                     <FoodPlan/>
+                   <Amenities />
                     <Gallery/>
-                    <Connectivity/>
+                   <Connectivity/>
+                   <Enquire />
 
-      <Amenities />
                 <Footer/>
 </>
   );

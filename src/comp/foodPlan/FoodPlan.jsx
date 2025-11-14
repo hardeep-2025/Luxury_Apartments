@@ -1,5 +1,4 @@
 import style from './FoodPlan.module.css';
-import backGround from "./Foodimg/triangle-5466422 1.png"
 import img from "./Foodimg/5742776_2978394 1 (1).png"
 import { Col, Container, Row } from 'react-bootstrap';
 

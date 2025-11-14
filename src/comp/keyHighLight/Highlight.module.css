@@ -1,6 +1,7 @@
 .background{
     background-image: url("./img/vecteezy_modern-living-room-illustration_22336794\ 1.png");
     background-color: rgb(17, 17, 61);
+    background-size: cover;
     color: white;
 }
 .main{

@@ -10,7 +10,7 @@ margin: 22px 12px;
 text-decoration: underline;
 text-decoration-color:#FF8C27 ;
 text-underline-offset: 5px;
-
+margin-bottom: 50px;
 }
 .amenitiesMainContiner{
     margin: 120px 0px;
@@ -52,7 +52,6 @@ text-align: center;
     .amenitiesContanir{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 60px;
       
       
     width: max-content;
@@ -60,25 +59,26 @@ text-align: center;
     place-items: center;
     }
 }
-@media (max-width: 967px) {
+@media (max-width: 991px) {
     .amenitiesContanir{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 60px;
     }
 } 
 @media (max-width: 768px) {
     .amenitiesContanir{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 40px;
     }
 } 
 @media (max-width: 480px) {
     .amenitiesContanir{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
     }
 }
 
+
+.amenity-item:hover{
+  border: #FF8C27 1.75px solid;
+}

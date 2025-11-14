@@ -5,7 +5,6 @@ import poker from './img/poker 1.png';
 import road from './img/road 1.png';
 import light from './img/smart-light 1.png';
 import pool from './img/swimming-pool 1.png';
-import baxkgroundImg from "./img/vecteezy_modern-living-room-illustration_22336794 1.png"
 import style from './Highlight.module.css';
 
 function HighLight(){
@@ -49,7 +48,7 @@ function HighLight(){
                 <div><h2 className={style.mainHead}>Key Highlight</h2><hr className={style.line} /></div>
                 <div className={style.listDiv}>
                     {
-                        aboutLists.map((li)=>(<div key={li.text}>
+                        aboutLists.map((li ,i)=>(<div key={i}>
                             <img src={li.img} alt="img" /><p>{li.title}</p>
                             </div>
  ))

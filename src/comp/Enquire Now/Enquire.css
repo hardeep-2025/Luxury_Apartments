@@ -1,0 +1,15 @@
+.enquiery{
+    background-color: rgb(17, 17, 61);
+    border-radius: 0% 36%;
+
+;
+}
+
+
+.test{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}

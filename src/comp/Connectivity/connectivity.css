@@ -13,17 +13,40 @@
   margin: 22px 12px;
   text-decoration: underline;
   text-decoration-color: #FF8C27;
-  text-underline-offset: 5px;
+  text-underline-offset: 12px;
 }
 
-.connectivityDesc {
+.connectivityContent>h4{
+  font-family: "montserrat-Medium";
+font-weight: 500;
+font-size: 25px;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: center;
+color: #FF8C27;
+margin: 40px 0px;
+
+
+
+}
+.connectivityPraDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+.connectivityData{
   font-family: "montserrat-Medium";
   color: #555;
   font-size: 16px;
   max-width: 950px;
-  margin: 0 auto 40px auto;
-  text-align: center;
+  /* margin: 0 auto 40px auto; */
   line-height: 1.7;
+  width: 100%;
+  text-align: center;
 }
 
 .connectivityTables {
@@ -35,14 +58,6 @@
   margin-bottom: 50px;
 }
 
-.connectivityTableBlock h3 {
-  font-family: "montserrat-SemiBold";
-  font-weight: 600;
-  font-size: 20px;
-  color: #FF8C27;
-  margin: 30px 0 15px 0;
-  text-align: left;
-}
 
 .connectivityTableBlock table {
   width: 100%;
@@ -50,12 +65,14 @@
   border-collapse: collapse;
   margin: 0;
   padding: 0;
+    table-layout: fixed;
+
 }
 
 .connectivityTableBlock th,
 .connectivityTableBlock td {
   padding: 0.625em;
-  text-align: center;
+  text-align: left;
 }
 
 .connectivityTableBlock thead > tr > th {
@@ -73,18 +90,19 @@
   font-size: 15px;
   line-height: 32px;
   color: #333;
+  box-shadow: unset !important;
 }
 
-.connectivityTableBlock tr:nth-child(even) td {
-  background-color: #DEE6FF !important;
+.connectivityTableBlock tr:nth-child(odd) td {
+  background-color:#DEE6FF !important;
 }
 
 @media screen and (max-width: 767px) {
-    table {
+    .ConnectivityTable {
     border: 0;
   }
   
-  table thead{
+  .ConnectivityTable thead{
     border: none; 
     height: 1px;
     margin: -1px;
@@ -93,32 +111,49 @@
     position: absolute;
     width: 1px;
   }
-   .PriceListTableHead>th{
-    /* color: black; */
-   }
 
-  table tr {
+      .ConnectivityTable  tr {
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: .625em;
   }
   
-  table td {
+      .ConnectivityTable  td {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: .8em;
     text-align: right;
   }
   
-  table td::before {
-    content: attr(data-label) " :- ";
+  .ConnectivityTable td::before {
+    content: attr(data-label) "";
     float: left;
     font-family: "Montserrat-Bold";
     font-weight: bolder;
     text-transform: uppercase;
   }
   
-  table td:last-child {
+  .ConnectivityTable td:last-child {
     border-bottom: 0;
+  }
+  .connectivityContent>h1{
+    font-size: 30px;
+  }
+  .connectivityContent>h4{
+    font-size: 22px;
+    margin: 20px 0px;
+  }
+}
+@media (max-width:402px){
+  .connectivityContent>h1{
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .connectivityContent>h4{
+    font-size: 20px;
+  }
+  .connectivityData{
+    font-size: 18px;
+    line-height: 24px;
   }
 }

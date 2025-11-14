@@ -1,4 +1,4 @@
-   import React from 'react';
+   import React, { useState } from 'react';
 import './Gallery.css';
 import img1 from './imhGallery/3d-rendering-modern-dining-room-living-room-with-luxury-decor (1) 1.png'
 import img2 from './imhGallery/vecteezy_3d-illustration-of-black-modern-kitchen-in-a-house-with-a_23122866 (2) 1.png'
@@ -9,30 +9,122 @@ import img6 from './imhGallery/vecteezy_modern-living-room-illustration_22337131
 import img7 from './imhGallery/vecteezy_modern-living-room-illustration_22385926 1.png'
 import img8 from './imhGallery/vecteezy_scandinavian-classic-white-kitchen-with-wooden-details_21994269 1.png'
 import img9 from './imhGallery/vecteezy_luxury-bedroom-with-modern-design-and-comfortable-bedding_32942505 1 (2).png'
+import "react-photo-album/rows.css";
+import { Col, Container, Row } from 'react-bootstrap';
+import ImageList from '@mui/material/ImageList';
+import "yet-another-react-lightbox/plugins/counter.css";
+import ImageListItem from '@mui/material/ImageListItem'
+import Lightbox from 'yet-another-react-lightbox';
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import {  Fullscreen, Slideshow, Zoom } from 'yet-another-react-lightbox/plugins';
 
-const images = [
-        img8,
-          img3,
-          img4,
-            img5,
-              img7,
-                img2,
-               img9,
-              img1,
-            img6,
-];
+
+
+
 
 function Gallery() {
+   
+  let Photos = [
+  
+  
+  {
+            src: img8,
+            rows: 1,
+            cols: 1,
+        },
+        {
+            src: img3,
+            rows: 2,
+            cols: 2,
+        },
+        {
+            src: img4,
+            rows: 3,
+            cols: 2,
+        },
+        {
+            src: img5,
+        },
+        {
+            src: img2,
+            rows: 3,
+            cols: 2,
+        },
+        {
+            src: img7,
+            cols: 1,
+        },
+        {
+            src: img9,
+            rows: 2,
+            cols: 2,
+        },
+        {
+            src: img1,
+        },
+        {
+            src: img6,
+        }
+    ]
+      const [open, setOpen] = useState(-1);
+
+
+  function srcset(image, size, rows = 1, cols = 1) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
+
   return (
+
     <section className="gallerySection">
-      <h2 className="galleryTitle">Our Gallery</h2>
-      <div className="galleryGrid">
-        {images.map((src, idx) => (
-          <div key={idx} className="galleryItem">
-            <img src={src} alt={`Gallery image ${idx+1}`} />
-          </div>
-        ))}
-      </div>
+                   <h1 className='galleryTitle'>Gallery</h1>
+
+      <div className='galleryContainer'>
+
+            <Container>
+        <Row>
+          <Col>
+          <div className='GalleryImageDiv'>
+            <ImageList 
+                 variant="quilted"
+                 cols={5}
+                 gap={8}
+                rowHeight={160}
+                className='gallery-images-list' >
+                {Photos.map((item,i) => (
+               <ImageListItem key={i} cols={item.cols || 1} rows={item.rows || 1} className={`GalleryImageCointer  gallery-Img-single-${i} `}
+                >
+          <img
+            {...srcset(item.src, 121, item.rows , item.cols)}
+            alt={i}
+            loading="lazy"
+            className={` gallery-SengleImg `}
+        onClick={() => {setOpen(i)}}
+          />
+
+              </ImageListItem>
+            ))}
+          </ImageList>
+      <Lightbox
+      index={open}
+        slides={Photos}
+            plugins={[Zoom,Fullscreen,Slideshow]}
+        styles={{slide: { marginTop: "20px" },  toolbar: {background: 'black', width: '100%'}, icon:{color: '#fff'} }}
+        controller={{ closeOnBackdropClick: true }}
+        open={open >= 0}
+        close={() => {setOpen(-1)}}
+        counter={{ container: { style: { top: 0, bottom: "unset" } } }}
+
+      />
+</div>
+      </Col>
+      </Row>
+      </Container></div>
     </section>
   );
 }
