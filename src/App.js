@@ -7,6 +7,9 @@ import 'react-slideshow-image/dist/styles.css'
 import HighLight from './comp/keyHighLight/HightLight';
 import FoodPlan from './comp/foodPlan/FoodPlan';
 import PriceList from './comp/priceList/PriceList';
+import Amenities from './comp/Amenities/Amenities';
+import Gallery from './comp/gallery/Gallery';
+import Connectivity from './comp/Connectivity/Connectivity';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -20,6 +23,10 @@ function App() {
                     <HighLight/>
                     <PriceList/>
                     <FoodPlan/>
+                    <Gallery/>
+                    <Connectivity/>
+
+      <Amenities />
                 <Footer/>
 </>
   );

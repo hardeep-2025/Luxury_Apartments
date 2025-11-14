@@ -1,0 +1,124 @@
+.connectivityMainContainer {
+  margin: 120px 0;
+}
+
+.connectivityContent > h1 {
+  font-family: "montserrat-Bold";
+  font-weight: 700;
+  font-size: 35px;
+  color: #FF8C27;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 22px 12px;
+  text-decoration: underline;
+  text-decoration-color: #FF8C27;
+  text-underline-offset: 5px;
+}
+
+.connectivityDesc {
+  font-family: "montserrat-Medium";
+  color: #555;
+  font-size: 16px;
+  max-width: 950px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.connectivityTables {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.connectivityTableBlock {
+  margin-bottom: 50px;
+}
+
+.connectivityTableBlock h3 {
+  font-family: "montserrat-SemiBold";
+  font-weight: 600;
+  font-size: 20px;
+  color: #FF8C27;
+  margin: 30px 0 15px 0;
+  text-align: left;
+}
+
+.connectivityTableBlock table {
+  width: 100%;
+  border: black 0.5px solid;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+
+.connectivityTableBlock th,
+.connectivityTableBlock td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+.connectivityTableBlock thead > tr > th {
+  background: #282828;
+  font-family: "montserrat-SemiBold";
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  line-height: 32px;
+}
+
+.connectivityTableBlock tbody > tr > td {
+  font-family: "montserrat-SemiBold";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 32px;
+  color: #333;
+}
+
+.connectivityTableBlock tr:nth-child(even) td {
+  background-color: #DEE6FF !important;
+}
+
+@media screen and (max-width: 767px) {
+    table {
+    border: 0;
+  }
+  
+  table thead{
+    border: none; 
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+   .PriceListTableHead>th{
+    /* color: black; */
+   }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label) " :- ";
+    float: left;
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}

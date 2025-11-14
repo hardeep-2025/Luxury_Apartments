@@ -1,0 +1,84 @@
+.amenitiesContiner>h1{
+      font-family:"montserrat-Bold";
+font-weight: 700;
+font-size: 35px;
+color: #FF8C27;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: center;
+margin: 22px 12px;
+text-decoration: underline;
+text-decoration-color:#FF8C27 ;
+text-underline-offset: 5px;
+
+}
+.amenitiesMainContiner{
+    margin: 120px 0px;
+}
+
+.amenity-item{
+    width: 168px;
+height: 168px;
+opacity: 1;
+border-radius: 8px;
+border-width: 1.5px;
+border: 1.5px solid #1C2647;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 20px;
+}
+.amenitiesContanir{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.amenity-item >img{
+  width: 40px;
+height: 40px;
+  }
+  .amenity-item >h5{
+    font-family: "montserrat-SemiBold";
+font-weight: 600;
+font-size: 15px;
+line-height: 17px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .amenitiesContanir{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 60px;
+      
+      
+    width: max-content;
+    margin: 0 auto;
+    place-items: center;
+    }
+}
+@media (max-width: 967px) {
+    .amenitiesContanir{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 60px;
+    }
+} 
+@media (max-width: 768px) {
+    .amenitiesContanir{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+} 
+@media (max-width: 480px) {
+    .amenitiesContanir{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+}
+

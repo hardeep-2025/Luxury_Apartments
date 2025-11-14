@@ -12,6 +12,9 @@ text-decoration-color:#FF8C27 ;
 text-underline-offset: 5px;
 
 }
+.priceListMainContiner{
+    margin: 120px 0px;
+}
 .TableDiffColor{
     background-color: #DEE6FF !important;
 
@@ -32,7 +35,7 @@ text-align: center;
 
 }
 .PriceListTableBody>tr>td{
-    font-family: "Montserrat-SemiBold";
+    font-family: "montserrat-SemiBold";
 font-weight: 600;
 font-size: 15px;
 line-height: 32px;
@@ -41,7 +44,7 @@ letter-spacing: 0%;
 }
 .PriceListTableHead>tr>th{
     background: #282828;
-font-family: "Montserrat-SemiBold";
+font-family: "montserrat-SemiBold";
 font-weight: 600;
 font-size: 15px;
 line-height: 32px;
@@ -51,13 +54,12 @@ color: white;
 }
 .table{
     border:black .5px solid;
-    /* border: 1px solid #ccc; */
   border-collapse: collapse;
   margin: 0;
   padding: 0;
-  width: 100%;
-  table-layout: fixed;
 }
+
+
 table th,
 table td {
   padding: .625em;
@@ -70,8 +72,7 @@ table td {
   }
   
   table thead{
-    border: none;
-    clip: rect(22222);
+    border: none; 
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -97,13 +98,10 @@ table td {
   }
   
   table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    /* content: attr(data-label); */
+    content: attr(data-label);
     float: left;
-    font-weight: bold;
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
     text-transform: uppercase;
   }
   
