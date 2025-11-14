@@ -38,13 +38,13 @@ function Header() {
                           </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <ul className={Style.MenuListItem}>
-                                     <li><a href=" ">About the Project</a></li>
-                                     <li><a href=" ">Key Highlights</a></li>
-                                     <li><a href=" ">Price List</a></li>
-                                     <li><a href=" ">Floor Plan</a></li>
-                                     <li><a href=" ">Amenities</a></li>
-                                     <li><a href=" ">Gallery</a></li>
-                                     <li><a href=" "> Seamless Connectivity</a></li>
+                                     <li><a href="aboutUs">About the Project</a></li>
+                                     <li><a href="keyHighlight">Key Highlights</a></li>
+                                     <li><a href="priceList">Price List</a></li>
+                                     <li><a href="floorPlan">Floor Plan</a></li>
+                                     <li><a href="amenities">Amenities</a></li>
+                                     <li><a href="gallery">Gallery</a></li>
+                                     <li><a href="semlesConnectivity"> Seamless Connectivity</a></li>
                                      <li><a href=" ">Contact Us</a></li>
                                 </ul>
                             </Offcanvas.Body>

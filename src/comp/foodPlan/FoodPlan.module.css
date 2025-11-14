@@ -14,9 +14,10 @@ margin-bottom: 50px;
 
 }
 .back{
-    background: rgb(17, 17, 61);
+    background: #1C2647;
     background-image: url(./Foodimg/triangle-5466422\ 1.png);
     background-position: center;
+    background-size: cover;
 }
 .main{
     display: flex;
@@ -29,7 +30,7 @@ margin-bottom: 50px;
 font-weight: 700;
 font-style: Bold;
 font-size: 35px;
-line-height: 27px;
+line-height: 37px;
 letter-spacing: 0%;
 text-align: start;
 

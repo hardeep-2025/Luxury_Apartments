@@ -11,7 +11,7 @@ import imgAbout from './imgAboutUs.png';
             <Container>
       <Row>
         <Col>  
-             <div className={style.AboutUs}>
+             <div className={style.AboutUs} id="aboutUs" >
                 <div className={style.upperContent}>
                     <p>A new landmark in premium living is taking shape — offering contemporary design, world-class amenities, and seamless connectivity for a lifestyle beyond ordinary.</p>
                       

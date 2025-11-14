@@ -20,14 +20,14 @@ function App() {
 
                 < Header/>
                     <Banner/>
-                    <AboutUs/>
+                    <AboutUs  />
                     <HighLight/>
                     <PriceList/>
                     <FoodPlan/>
                    <Amenities />
                     <Gallery/>
                    <Connectivity/>
-                   <Enquire />
+                   {/* <Enquire /> */}
 
                 <Footer/>
 </>

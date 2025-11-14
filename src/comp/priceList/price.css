@@ -14,7 +14,7 @@ margin-bottom: 50px;
 
 }
 .priceListMainContiner{
-    margin: 120px 0px;
+    margin: 56px 0px;
 }
 .TableDiffColor{
     background-color: #DEE6FF !important;
@@ -108,9 +108,16 @@ table td {
   table td:last-child {
     border-bottom: 0;
   }
+  table{
+    border-style: none !important;
+    border: none;
+  }
 }
 
 .tableBtn:hover{
   background-color: #ddd;
   border: .7px black solid;
+}
+table tr:hover{
+ background-color: #ddd !important;
 }

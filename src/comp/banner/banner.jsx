@@ -30,7 +30,7 @@ function Banner() {
                       <Col className={Style.Col}>
              <div className={Style.banner}>
             <div className={Style.ContentBanner}>
-                <h1 className={Style.mainHeading}>Unveiling Soon</h1> <hr className={Style.line} />
+                <h1 className={Style.mainHeading}>Unveiling Soon</h1> 
                 <p className={Style.mainSubHeading}>Discover Luxury Living on Patiala–Chandigarh Highway</p>
                 <p className={Style.subHeading}>The Future of Refined Living <span className={Style.lineBreak}></span> Begins Here</p>
             </div>
