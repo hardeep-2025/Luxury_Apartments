@@ -25,6 +25,8 @@
 .Banner-slider .slick-slide {
     height: 100%;
 }
-@media (max-width:991px){
 
+.popup-overlay,
+.popup-content {
+  z-index: 999999 !important;
 }

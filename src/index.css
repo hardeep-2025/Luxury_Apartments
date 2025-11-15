@@ -4,7 +4,12 @@ p{
 }
 ul{
     margin-bottom: 0px;
+    padding-left: 0px;
 }
 td{
     border-style: none;
+}
+.popup-content{
+    background-color:transparent !important;
+    border: none !important;
 }

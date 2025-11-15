@@ -12,7 +12,7 @@
 
 .gallery-images-list{
     /* padding: 40px 0px; */
-    border-radius: 0% 29%;
+    border-radius: 0px 230px;
 
 }
 
@@ -51,7 +51,7 @@
     }
     .gallerySection{
         height: 340px;
-        margin-bottom: 28rem;
+        margin-bottom: 42rem;
         padding: 10px;
 
     }
@@ -62,5 +62,8 @@
      .gallery-images-list>li{
         height: 170px !important;
         width: 100%;
+     }
+     .gallerySection{
+        margin-bottom: 36rem;
      }
 }

@@ -68,6 +68,7 @@ function Amenities() {
   }
 ]
   return (
+    <section id='Amenities'>
     <div className='amenitiesMainContiner'>
 
                                <Container>
@@ -91,7 +92,7 @@ function Amenities() {
                      </Col>
                       </Row>
                       </Container>
-    </div>
+    </div></section>
   )
 }
 

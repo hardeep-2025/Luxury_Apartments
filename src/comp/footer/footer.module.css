@@ -61,6 +61,7 @@ color: #293868;
 }
 .FooterFirstPart2ListDiv{
     display: flex;
+    gap: 20px;
 }
 .FooterFirstPart2ListStyle>ul{
     padding-left:30px ;
@@ -94,7 +95,8 @@ letter-spacing: 0%;
     font-family: "montserrat-bold";
 font-weight: 700;
 font-size: 18px;
-margin-top: 20px;
+padding: 20px;
+/* margin-top: 20px; */
 line-height: 32px;
 color: #293868;
 

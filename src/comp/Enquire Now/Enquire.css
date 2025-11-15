@@ -1,22 +1,36 @@
 .enquiery{
+    position: relative;
     background-color: #1C2647;
-    border-radius: 0% 36%;
-    height: 100vh
+    border-radius: 0px 300px 0px 420px;
+    
+    /* padding-top: 2rem; */
+    padding-bottom: 2rem;
+    display: flex;
 
+}
+.enquiery .sideImg{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 0% 0% 0% 34%
+
+    
 ;
 }
 .mainEnquiryDiv{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 3em;
+    min-height: 681px;
 }
 .emtyDivEnquiry{
     width: 50%;
+    flex: 1;
 }
 
 
-.test{
+.enquireFormContaner{
     display: flex;
+    flex: 1;
     width: 50%;
     color: white;
      justify-content: space-around;
@@ -28,7 +42,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    gap: 20px;
+    gap: 0px;
 }
 .enquireForm>h1{
     
@@ -38,8 +52,8 @@
   color: #FFFFFF;
   line-height: 27px;
   letter-spacing: 0%;
-  text-align: center;
-  margin: 22px 12px;
+  text-align: left;
+  margin: 2px 2px;
   text-decoration: underline;
   text-decoration-color: #FFFFFF;
   text-underline-offset: 12px;
@@ -48,19 +62,24 @@
 .enquireForm>p{
     font-family: "montserrat-Medium";
 font-weight: 500;
-font-size: 22px;
+font-size: 19px;
 line-height: 27px;
+margin-top: 2rem;
 letter-spacing: 0%;
-text-align: center;
-margin-bottom: 4rem;
+text-align: left;
+margin-bottom: 3rem;
 
 }
-.enquireForm>input{
+.phoneNOenquire{
+    width: 100%;
+}
+.enquireForm>input ,.phoneNOenquire>input{
     width: 100%;
     text-transform: uppercase;
     padding: 10px;
     font-family: "montserrat-Medium";
 font-weight: 500;
+margin: .45rem 0rem;
 font-size: 18px;
 line-height: 27px;
 letter-spacing: 0%;
@@ -73,6 +92,12 @@ border-bottom: 1px solid white
 }
 .enquireForm>input:focus-visible{
 outline: none;}
+.phoneNOenquire>input:focus-visible{
+    outline: none;
+}
+.phoneNOenquire>input::placeholder{
+    color: white;
+}
 .enquireForm>input::placeholder{
     color: white;
 }
@@ -95,3 +120,49 @@ margin-top: 2rem;
 
 
 }
+
+
+@media (max-width:991px) {
+    
+    .enquireForm>h1{
+        font-size: 30px;
+    }
+    .enquireForm>p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .enquireForm>input,.phoneNOenquire>input{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+@media (max-width:767px){
+    .enquiery{
+        flex-direction: column;
+    }
+    .enquiery .sideImg{
+        position: relative;
+        height: 60%;
+        border-radius: 0% 0% 0% 0%;
+        width: 100%;
+    }
+    .mainEnquiryDiv{
+        flex-direction: column;
+    }
+    .emtyDivEnquiry{
+        display: none;
+    }
+    .enquireFormContaner{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /* margin: 2rem 3rem; */
+        padding-top: 0rem;
+    }
+    .enquiery{
+        padding-bottom: 2rem;
+        border-radius:0%;
+    }
+
+
+} 

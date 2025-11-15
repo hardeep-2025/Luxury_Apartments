@@ -2,6 +2,8 @@ import Table from 'react-bootstrap/Table';
 import "./price.css"
 
 import { Col, Container, Row } from 'react-bootstrap';
+import Popup from 'reactjs-popup';
+import DataPopup from '../popUp/popUp';
 
 
 
@@ -34,25 +36,35 @@ function PriceList() {
           <td className='TableDiffColor' data-label="Unit Type">3 BHK</td>
           <td className='TableDiffColor' data-label="SIZE">800 to 950 Sq.ft</td>
           <td className='TableDiffColor'data-label="Price">X.XX Cr*</td>
-          <td className='TableDiffColor' data-label=" "><button className='tableBtn'>Enquire Now</button></td>
+          <td className='TableDiffColor' data-label=" "><Popup trigger={ <button className='tableBtn'>Enquire Now</button>} modal nested>
+                 <DataPopup/>
+            </Popup></td>
         </tr>
         <tr>
           <td  data-label="Unit Type">3+1 BHK</td>
           <td data-label="SIZE">1100 to 1600 Sq.ft</td>
           <td data-label="Price">X.XX Cr*</td>
-          <td data-label=" "><button className='tableBtn'>Enquire Now</button></td>
+          <td data-label=" "><Popup trigger={ <button className='tableBtn'>Enquire Now</button>} modal nested>
+                 <DataPopup/>
+            </Popup></td>
         </tr>
         <tr>
           <td className='TableDiffColor' data-label="Unit Type">4 BHK</td>
           <td className='TableDiffColor' data-label="SIZE">1900 to 2000 Sq.ft</td>
           <td className='TableDiffColor' data-label="Price">X.XX Cr*</td>
-          <td className='TableDiffColor' data-label=" "><button className='tableBtn'>Enquire Now</button></td>
+          <td className='TableDiffColor' data-label=" "><Popup trigger={ <button className='tableBtn'>Enquire Now</button>} modal nested>
+                 <DataPopup/>
+            </Popup></td>
         </tr>
                 <tr>
           <td data-label="Unit Type">4+1 BHK</td>
           <td data-label="SIZE">2300 to 2700 Sq.ft</td>
           <td data-label="Price">X.XX Cr*</td>
-          <td data-label=" "><button className='tableBtn'>Enquire Now</button></td>
+          <td data-label=" ">
+            <Popup trigger={ <button className='tableBtn'>Enquire Now</button>} modal nested>
+                 <DataPopup/>
+            </Popup>
+           </td>
         </tr>
       </tbody>
     </Table></div>

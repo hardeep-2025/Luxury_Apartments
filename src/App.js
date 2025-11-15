@@ -11,6 +11,9 @@ import Amenities from './comp/Amenities/Amenities';
 import Gallery from './comp/gallery/Gallery';
 import Connectivity from './comp/Connectivity/Connectivity';
 import Enquire from './comp/Enquire Now/Enquire';
+import 'reactjs-popup/dist/index.css';
+// import 'reactjs-popup/dist/index.css';
+
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -27,7 +30,7 @@ function App() {
                    <Amenities />
                     <Gallery/>
                    <Connectivity/>
-                   {/* <Enquire /> */}
+                   <Enquire />
 
                 <Footer/>
 </>

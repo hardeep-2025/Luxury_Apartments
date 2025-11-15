@@ -1,0 +1,242 @@
+.popUpContiner{
+background: #798AC1;
+    margin: 0px;
+    padding: 10px;
+    border: none;
+    color: white;
+
+}
+.popUplogo{
+    width:100%;
+    text-align: center;
+}
+.popupHeadingAndPara>h1{
+   font-family: "montserrat-Bold";
+   font-size: 25px;
+   line-height: 22px;
+}
+.popupHeadingAndPara>p{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "montserrat-Medium";
+
+}
+.popupData{
+    display: flex;
+    margin-top: .3rem;
+    /* gap: 1rem; */
+}
+.popSideData{
+    width: 40%;
+}
+.popSideData>h4{
+font-size: 20px;
+font-family: "montserrat-Bold";
+}
+.popSideData>ul{
+    list-style: none;
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+}
+.popSideData>ul>li>img{
+    width: 30px;
+    height: 30px;
+
+}
+.popSideData>ul>li{
+    display: flex;
+    gap: 13px;
+    margin: 6px;
+    margin-right: 0px;
+}
+.popUpFormData{
+    width: 70%;
+    border-left: 2px solid #FF8C27;
+    padding: 10px;
+}
+.popUpform{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+}
+.popUpform>input , .phoneNoPopUp>input{
+    margin: 6px;
+    padding: 6px;
+    background-color: #798AC1;
+    border: 1px solid white;
+    color: white;
+    font-family: "montserrat-Medium";
+    border-radius: 10px;
+}
+.popUpform>input::placeholder{
+    color: white;
+}
+ .phoneNoPopUp>input{
+   color: white;
+}
+.popUpfomrBtnGroup{
+    margin-top: .5rem;
+    width: 100%;
+    display: flex;
+    font-family: "montserrat-Medium";
+    font-size: 14px;
+    gap: 10px;
+}
+.popUpfomrBtnGroup>button{
+    font-family: "montserrat-Medium";
+    padding: 5px 6px;
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    
+}
+.popUpform>p{
+    margin-top: 1rem;
+    font-family: "montserrat-Medium";
+    font-size: 14px;
+    line-height: 18px;
+}
+#checkbox{
+    margin-right: .2rem;
+}
+.popUpform>button{
+    width: 50%;
+    margin-top: 1rem;
+    padding: 8px 2px;
+    text-transform: capitalize;
+    font-family: "Montserrat-Bold";
+    background: #FF8C27;
+    align-items: left;
+    border: none;
+    border-radius: 10px;
+}    .popup-content{
+        width: 60% !important;
+    }
+
+
+.popUpform>input:focus-visible{
+    outline: none;
+}
+@media (max-width:1199px){
+    .popSideData>ul>li {
+    gap: 4px;
+    margin: 6px;
+}
+.popSideData>ul{
+    font-size: 12px;
+}
+.popSideData>ul>li>img{
+    width: 25px;
+    height: 25px;
+}
+.popUpfomrBtnGroup>button{
+    font-size: 10px;
+}
+.popUpform>p{
+    font-size: 12px;
+}.popUpform>button{
+    font-size: 15px;
+    padding: 3px;
+}     .popup-content{
+        width: 60% !important;
+    }
+
+}
+@media (max-width:991px){
+    .popUplogo>img{
+        width: 120px;
+    }
+    .popupHeadingAndPara>h1{
+        font-size: 23px;
+        line-height: 26px;
+    }
+    .popupHeadingAndPara>p{
+        font-size: 14px;
+        margin-top: -4px;
+    }
+    .popSideData>h4{
+        margin-top: 20px;
+       font-size: 17px;
+    }
+    .popSideData>ul{
+        font-size: 9px;
+    }
+    .popSideData>ul>li>img{
+        width: 20px;
+        height: 20px;
+    }
+    .popUpform>input, .phoneNoPopUp>input{
+        font-size: 15px;
+        padding: 4px 4px;
+    }
+    .popUpfomrBtnGroup>button{
+        width: 100%;
+        padding: 2px ;
+    }
+       .popUpform>p{
+        font-size: 10px;
+    }
+    .popUpform>button{
+        font-size: 12px;
+    }  
+}
+@media (max-width:767px){
+    .popUplogo>img{
+    width: 90px;
+}
+    .popupData{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .popUpFormData{
+        width: 100%;
+        padding: 0px;
+        border: none;
+        border-bottom: 2px solid #FF8C27;
+        padding-bottom: 12px;
+    }
+        .popup-content{
+        width: 100% !important;
+    }
+    .popSideData{
+        display: grid;
+        width: 100%;
+    }
+    .popSideData>ul>li{
+        width: 100%;
+    }
+    .popSideData>ul{
+        display: grid;
+     grid-template-columns: repeat(2 ,1fr);
+
+    }.popupHeadingAndPara>h1 {
+    font-size: 18px;
+    line-height: 22px;
+}.popupHeadingAndPara>p {
+    font-size: 12px;
+    margin-top: -7px;
+}.popUpform>input, .phoneNoPopUp>input {
+    font-size: 13px;
+    padding: 2px 4px;
+    width: 100%;
+}.popUpfomrBtnGroup>button{
+    width: 70%;
+}.popSideData>ul>li {
+    margin: 4px;
+}.popUpform>button {
+    width: 32%;}}
+
+    .phoneNoPopUp>input::placeholder{
+        background: transparent;
+        color: white;
+    }
+    .phoneNoPopUp>input:focus-visible{
+        outline: none;
+    }
+
+
+    .popUpfomrBtnGroup>button:hover{
+        background: #FF8C27;
+    }
