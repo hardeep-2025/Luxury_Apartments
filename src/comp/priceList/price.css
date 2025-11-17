@@ -88,13 +88,13 @@ table td {
 
 
   table tr {
-    border-bottom: 3px solid #ddd;
+    /* border-bottom: 3px solid #ddd; */
     display: block;
     margin-bottom: .625em;
   }
   
   table td {
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
     display: block;
     font-size: .8em;
     text-align: right;
