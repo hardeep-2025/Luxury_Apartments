@@ -4,14 +4,12 @@ import AboutUs from './comp/AboutUs/AboutUs';
 import Footer from './comp/footer/footer';
 import Header from './comp/header/header';
 import 'react-slideshow-image/dist/styles.css'
-import HighLight from './comp/keyHighLight/HightLight';
-import FoodPlan from './comp/foodPlan/FoodPlan';
-import PriceList from './comp/priceList/PriceList';
-import Amenities from './comp/Amenities/Amenities';
-import Gallery from './comp/gallery/Gallery';
-import Connectivity from './comp/Connectivity/Connectivity';
-import Enquire from './comp/Enquire Now/Enquire';
 import 'reactjs-popup/dist/index.css';
+import TermAndPolicy from './policey/TermAndPolicy';
+import PrivacyAndPolicy from './policey/PrivacyAndPolicy';
+import Home from './Home';
+import { BrowserRouter, Route, Routes } from 'react-router';
+import Layout from './Layout';
 // import 'reactjs-popup/dist/index.css';
 
 
@@ -20,19 +18,21 @@ import 'reactjs-popup/dist/index.css';
 function App() {
   return (
 <>
+   
 
-                < Header/>
-                    <Banner/>
-                    <AboutUs  />
-                    <HighLight/>
-                    <PriceList/>
-                    <FoodPlan/>
-                   <Amenities />
-                    <Gallery/>
-                   <Connectivity/>
-                   <Enquire />
+     <BrowserRouter>
+       < Header/>
 
-                <Footer/>
+     <Routes>
+        <Route path="/" element={<Layout></Layout>} />
+        <Route path="/termAndCondtion" element={<TermAndPolicy></TermAndPolicy>} />
+        <Route path="/PrivacyAndPolicy" element={<PrivacyAndPolicy></PrivacyAndPolicy> } />
+
+     </Routes>
+     {/* <Home></Home> */}
+     <Footer/>
+     </BrowserRouter>
+
 </>
   );
 }

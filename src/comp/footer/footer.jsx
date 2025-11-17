@@ -6,10 +6,12 @@ import Col from 'react-bootstrap/Col';
 import youtube from "./footerImg/youtube.png"
 import facebook  from "./footerImg/facebook.png"
 import twitter from "./footerImg/twitter.png"
+import { BrowserRouter, Link } from 'react-router';
 
 function Footer() {
   return (
 <>
+
     <Container>
       <Row>
         <Col>   <footer className={Style.Footer}>
@@ -61,8 +63,8 @@ function Footer() {
         <Col>   
                 <div className={Style.FooterThirdPart}>
 
-        <div><span className={Style.underline}><a href=" ">Terms & Conditions</a> </span>and<span className={Style.underline}><a href=" "> Privacy Policy</a></span></div>
-        <div>Crafted By: <span className={Style.underline}><a href=" ">IosAndWeb Technologies</a></span></div>
+        <div><span className={Style.underline}><Link to="/termAndCondtion" target='blank'>Terms & Conditions</Link> </span>and<span className={Style.underline}><Link to="/PrivacyAndPolicy" target='blank'> Privacy Policy</Link></span></div>
+        <div>Crafted By: <span className={Style.underline}><Link to="/PrivacyAndPolicy">IosAndWeb Technologies</Link></span></div>
            </div>
 
         </Col>

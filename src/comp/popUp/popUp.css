@@ -60,7 +60,22 @@ font-family: "montserrat-Bold";
     /* justify-content: center; */
 
 }
-.popUpform>input , .phoneNoPopUp>input{
+.modal.fade .modal-dialog{
+ margin-right: 2rem !important;
+}
+
+
+.closepng{
+  align-items: end;
+ width: 20px;
+}
+.phoneNoPopUp>input{
+    border: none;
+    background-color: #798AC1;
+    color: white;
+    font-family: "montserrat-Medium";
+}
+.popUpform>input , .phoneNoPopUp{
     margin: 6px;
     padding: 6px;
     background-color: #798AC1;

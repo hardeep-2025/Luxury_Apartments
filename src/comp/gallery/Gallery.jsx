@@ -18,6 +18,7 @@ import Lightbox from 'yet-another-react-lightbox';
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import {  Fullscreen, Slideshow, Zoom } from 'yet-another-react-lightbox/plugins';
+import { Element } from 'react-scroll';
 
 
 
@@ -80,6 +81,7 @@ function Gallery() {
 }
 
   return (
+    <div name="gallery" id='gallery'>
 
     <section className="gallerySection">
                    <h1 className='galleryTitle'>Gallery</h1>
@@ -126,6 +128,7 @@ function Gallery() {
       </Row>
       </Container></div>
     </section>
+    </div>
   );
 }
 

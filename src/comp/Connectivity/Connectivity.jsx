@@ -1,9 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Table } from "react-bootstrap";
 import "./connectivity.css";
+import { Element } from "react-scroll";
 
 function Connectivity() {
   return (
+<div name="semlesConnectivity" id="semlesConnectivity">
+
     <div className="connectivityMainContainer">
       <Container>
         <Row>
@@ -103,6 +106,7 @@ function Connectivity() {
           </Col>
         </Row>
       </Container>
+    </div>
     </div>
   );
 }

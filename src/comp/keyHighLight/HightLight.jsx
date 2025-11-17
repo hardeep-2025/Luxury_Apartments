@@ -6,6 +6,7 @@ import road from './img/road 1.png';
 import light from './img/smart-light 1.png';
 import pool from './img/swimming-pool 1.png';
 import style from './Highlight.module.css';
+import { Element } from "react-scroll";
 
 function HighLight(){
     const aboutLists = [
@@ -37,6 +38,7 @@ function HighLight(){
 
     return(<>
     
+    <div id="keyHighlight">
     <div className={style.background}>
        
         
@@ -60,7 +62,7 @@ function HighLight(){
         </Row>
         </Container> 
     </div>
-
+</div>
 
 
 

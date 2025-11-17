@@ -36,12 +36,15 @@ text-align: center;
 border: none;
 
 }
+
 .PriceListTableBody>tr>td{
     font-family: "montserrat-SemiBold";
 font-weight: 600;
 font-size: 15px;
 line-height: 32px;
 letter-spacing: 0%;
+vertical-align: middle;
+
 
 }
 .PriceListTableHead>tr>th{

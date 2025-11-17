@@ -5,16 +5,22 @@ import Style from './header.module.css';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react';
-import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import DataPopup from '../popUp/popUp';
+import ScrolBack from '../../SrollBack';
+import Modal from 'react-bootstrap/Modal';
+
 
 
 
 
 function Header() {
 
-    
+     const [showPop, setShowPop] = useState(false);
+
+  const handleClosePOP = () => setShowPop(false);
+  const handleShowPOP = () => setShowPop(true);
+ 
   const [show, setShow] = useState (false);
 
   const handleClose = () => setShow(false);
@@ -28,9 +34,16 @@ function Header() {
             <div className={Style.HeaderContent}>
 
   <div>
-            <Popup trigger={<button className={Style.HeaderEnqureBtn}>Enquire Now</button>} modal nested>
-                 <DataPopup/>
-            </Popup>
+          <button variant="primary" onClick={handleShowPOP} className={Style.HeaderEnqureBtn}>Enquire Now</button>
+      <Modal
+        show={showPop}
+        onHide={handleClosePOP}
+        size='lg'
+        backdrop="static"
+        keyboard={false}>
+                         <DataPopup  handleClosePOP={handleClosePOP} />
+        </Modal>
+
         </div>
 
 
@@ -50,18 +63,32 @@ function Header() {
                          <Offcanvas.Header closeButton>
                           </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <ul className={Style.MenuListItem}>
-                                     <li><a href="aboutUs">About the Project</a></li>
-                                     <li><a href="keyHighlight">Key Highlights</a></li>
-                                     <li><a href="priceList">Price List</a></li>
-                                     <li><a href="floorPlan">Floor Plan</a></li>
-                                     <li><a href="Amenities">Amenities</a></li>
-                                     <li><a href="gallery">Gallery</a></li>
-                                     <li><a href="semlesConnectivity"> Seamless Connectivity</a></li>
-                                     <li><a href=" ">Contact Us</a></li>
-                                </ul>
+                                <ul className={  Style.MenuListItem}>
+                            <li onClick={handleClose} >
+                                     <ScrolBack to={"Aboutus"} offset={0} >About us</ScrolBack>
+                              </li>
+                                     <li  onClick={handleClose} >
+                                     <ScrolBack to={"keyHighlight"} offset={-70} >Key Highlights</ScrolBack>
+                                     </li>
+                                     <li  onClick={handleClose} >
+                                       <ScrolBack to={"priceList"} offset={-70} >Price List</ScrolBack>
+                                       </li>
+                                     <li  onClick={handleClose} >
+                                       <ScrolBack to={"floorPlan"} offset={-100} >Floor list</ScrolBack>                    </li>
+                                     <li onClick={handleClose}>
+                                      <ScrolBack to={"Amenities"} offset={-70} >Amenities</ScrolBack> 
+                                      </li>
+
+                                     <li  onClick={handleClose} >
+                                      <ScrolBack to={"gallery"} offset={-90} >Gallery</ScrolBack>                                       </li>
+                                     <li  onClick={handleClose} >
+                                       <ScrolBack to={"semlesConnectivity"} offset={-70} >Semless Connectivity</ScrolBack>                                      </li>
+                                     <li  onClick={handleClose} >
+                                       <ScrolBack to={"ContactUs"} offset={-70} >Contact Us</ScrolBack></li>                                </ul>
                             </Offcanvas.Body>
                                 </Offcanvas>
+
+
 
             </div>
         </header>

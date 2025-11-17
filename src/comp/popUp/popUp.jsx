@@ -5,12 +5,13 @@ import catalog from "./icons/catalog.png"
 import money from "./icons/money.png"
 import telephone from "./icons/telephone.png"
 import logo from './icons/logo.png';
+import close from './icons/close.png';
 import "./popUp.css";
 import { Col, Container, Row } from "react-bootstrap"    
 import React, { useState } from 'react';
 import 'react-phone-number-input/style.css'; 
 import PhoneInput from 'react-phone-number-input';
-function DataPopup(){
+function DataPopup({handleClosePOP}){
     
   const list = [
 
@@ -31,12 +32,10 @@ function DataPopup(){
           const [phoneNumber, setPhoneNumber] = useState();
 
     return(<>
-    <Container>
-        <Row>
-
-            <Col>
             
             <div className="popUpContiner"> 
+              
+              <img src={close} alt="" onClick={()=>{handleClosePOP()} }className="closepng" />
                <div className="popUplogo" ><img src={logo} alt="logo" /></div>
                <div className="popupHeadingAndPara">
                 <h1>Enquire Now to Know More</h1>
@@ -70,7 +69,6 @@ function DataPopup(){
                </div>
             </div>
             
-            </Col></Row> </Container>              
                 </>)
 }
 export default DataPopup

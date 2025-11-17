@@ -1,15 +1,25 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Modal, Row } from "react-bootstrap";
 import style from './AboutUs.module.css';
 import imgAbout from './imgAboutUs.png';
 import DataPopup from "../popUp/popUp";
 import Popup from "reactjs-popup";
+import { useState } from "react";
  
  
  
  function AboutUs(){
-    return (
-        <>
+ 
+     const [showPop, setShowPop] = useState(false);
 
+  const handleClosePOP = () => setShowPop(false);
+  const handleShowPOP = () => setShowPop(true);
+ 
+    return (
+                <>
+
+                     <div name="AboutUs" id="AboutUs">
+
+             
             <Container>
       <Row>
         <Col>  
@@ -18,12 +28,24 @@ import Popup from "reactjs-popup";
                     <p>A new landmark in premium living is taking shape — offering contemporary design, world-class amenities, and seamless connectivity for a lifestyle beyond ordinary.</p>
                       
                       <div className={style.btncontanier}>
-                           <Popup trigger={<button className={style.upperbtn1}>Register for Early Access</button>} modal nested>
-                 <DataPopup/>
-            </Popup>   <Popup trigger={ <button   className={style.upperbtn2}>Get Brochure / Price Details</button>} modal nested>
-                 <DataPopup/>
-            </Popup>
-                        
+     <button variant="primary" onClick={handleShowPOP}  className={style.upperbtn2}  >Get Brochure / Price Details</button>
+      <Modal
+        show={showPop}
+        onHide={handleClosePOP}
+        size='lg'
+        backdrop="static"
+        keyboard={false}>
+     <DataPopup  handleClosePOP={handleClosePOP} />
+        </Modal>
+                          <button variant="primary" onClick={handleShowPOP}   className={style.upperbtn1}>Register for Early Access</button>
+      <Modal
+        show={showPop}
+        onHide={handleClosePOP}
+        size='lg'
+        backdrop="static"
+        keyboard={false}>
+                         <DataPopup  handleClosePOP={handleClosePOP} />
+        </Modal>  
                        </div>
                 </div>
                 <div className={style.secoundContent} >
@@ -47,9 +69,15 @@ import Popup from "reactjs-popup";
                            <p className={style.subContantData}>It’s not just a home. <br />  It’s your statement of success.</p>
                            </div>
                            <div>
-                    <Popup trigger={<button className={style.contantbtn}>Enquire Now</button>} modal nested>
-                 <DataPopup/>
-            </Popup>
+                      <button variant="primary" onClick={handleShowPOP}  className={style.contantbtn}>Enquire Now</button>
+      <Modal
+        show={showPop}
+        onHide={handleClosePOP}
+        size='lg'
+        backdrop="static"
+        keyboard={false}>
+                         <DataPopup  handleClosePOP={handleClosePOP} />
+        </Modal>
                              </div>
                     </div>
                 </div>
@@ -59,7 +87,10 @@ import Popup from "reactjs-popup";
         </Col> 
         </Row>
         </Container>
-        </>
+                </div>
+                        </>
+
+
     )
  
 

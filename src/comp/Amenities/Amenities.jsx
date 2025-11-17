@@ -15,6 +15,7 @@ import wifiRouter  from "./AmenitiesImg/wifi-router 1.png"
 import yoga  from "./AmenitiesImg/yoga (1) 1.png"
 import pool  from "./AmenitiesImg/pool (1) 1.png"
 import { Col, Container, Row } from 'react-bootstrap'
+import { Element } from 'react-scroll'
 
 function Amenities() {
   let data=[
@@ -68,8 +69,12 @@ function Amenities() {
   }
 ]
   return (
+<div name="Amenities" id='Amenities'>
+
     <section id='Amenities'>
     <div className='amenitiesMainContiner'>
+                           
+                           
 
                                <Container>
                  <Row>
@@ -93,6 +98,7 @@ function Amenities() {
                       </Row>
                       </Container>
     </div></section>
+    </div>
   )
 }
 

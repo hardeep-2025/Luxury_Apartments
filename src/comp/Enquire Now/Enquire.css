@@ -73,7 +73,23 @@ margin-bottom: 3rem;
 .phoneNOenquire{
     width: 100%;
 }
-.enquireForm>input ,.phoneNOenquire>input{
+.phoneNOenquire>input{
+    text-transform: capitalize;
+    width: 100%;
+     /* padding: 10px; */
+    font-family: "montserrat-Medium";
+font-weight: 500;
+/* margin: .45rem 0rem; */
+font-size: 18px;
+color: white;
+line-height: 27px;
+letter-spacing: 0%;
+background-color: #1C2647;
+background: transparent;
+border: none;
+}
+
+.enquireForm>input ,.phoneNOenquire  {
     width: 100%;
     text-transform: uppercase;
     padding: 10px;

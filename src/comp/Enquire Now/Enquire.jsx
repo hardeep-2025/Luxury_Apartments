@@ -5,6 +5,7 @@ import sideImg from "./4fb91ffe7d7aee4b6be6b9d96bdc868cbe717c7b (1).jpg"
 import 'react-phone-number-input/style.css'; 
 import PhoneInput from 'react-phone-number-input';
 import { useState } from 'react';
+import { Element } from 'react-scroll';
 
 
 
@@ -12,7 +13,8 @@ function Enquire(){
               const [phoneNumber, setPhoneNumber] = useState();
 
 
-    return(<>
+    return(<> 
+    <div name="ContactUs" id='ContactUs'>
     <div className='enquiery' style={{position:"relative"}}>
         <img className='sideImg' src={sideImg} alt=""/>
     <Container>
@@ -47,7 +49,7 @@ function Enquire(){
         </Row>
     </Container>
     </div>
-
+</div>
 
 
     </>)
