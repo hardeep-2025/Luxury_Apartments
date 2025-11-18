@@ -64,7 +64,7 @@ import { useState } from "react";
                     </div>
                     <div className={style.contant}>
                            <div><h3 className={style.contantHead}>A Vision of Luxury, Crafted for the Modern Elite</h3></div>
-                           <div><p className={style.contantdata}>Experience a lifestyle that blends sophistication with serenity. This upcoming residential marvel on the Patiala–Chandigarh Highway is designed to elevate everyday living — from grand entrances to lush green landscapes, from smart interiors to exclusive leisure zones.</p>
+                           <div><p className={style.contantdata}>Experience a lifestyle that blends sophistication with serenity. This upcoming residential marvel on the Patiala–Chandigarh Highway is designed to elevate everyday living — from grand entrances to lush green landscapes, from smart interiors to exclusive leisure zones.</p><br />
                            
                            <p className={style.subContantData}>It’s not just a home. <br />  It’s your statement of success.</p>
                            </div>

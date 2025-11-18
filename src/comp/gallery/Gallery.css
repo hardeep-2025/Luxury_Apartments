@@ -70,13 +70,13 @@
 }
 @media (max-width:425px){
         .gallerySection {
-            margin-bottom: 16rem;
+            margin-bottom: 30rem;
         }
          .gallery-images-list>li{
-            height: 100px !important;
+            height: 180px !important;
          }
     .GalleryImageCointer>img ,.GalleryImageCointer{
-        height: 100px !important;
+        height: 180px !important;
     }
     .galleryContainer {
         padding: 28px 0px;

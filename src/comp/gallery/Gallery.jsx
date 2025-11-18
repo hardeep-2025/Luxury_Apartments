@@ -10,6 +10,7 @@ import img7 from './imhGallery/vecteezy_modern-living-room-illustration_22385926
 import img8 from './imhGallery/vecteezy_scandinavian-classic-white-kitchen-with-wooden-details_21994269 1.png'
 import img9 from './imhGallery/vecteezy_luxury-bedroom-with-modern-design-and-comfortable-bedding_32942505 1 (2).png'
 import "react-photo-album/rows.css";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import { Col, Container, Row } from 'react-bootstrap';
 import ImageList from '@mui/material/ImageList';
 import "yet-another-react-lightbox/plugins/counter.css";
@@ -115,7 +116,7 @@ function Gallery() {
       <Lightbox
       index={open}
         slides={Photos}
-            plugins={[Zoom,Fullscreen,Slideshow]}
+            plugins={[Zoom,Fullscreen,Slideshow,Thumbnails]}
         styles={{slide: { marginTop: "20px" },  toolbar: {background: 'black', width: '100%'}, icon:{color: '#fff'} }}
         controller={{ closeOnBackdropClick: true }}
         open={open >= 0}

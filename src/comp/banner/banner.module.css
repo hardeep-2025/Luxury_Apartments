@@ -133,7 +133,7 @@ overflow: hidden;
         width: 50%;
     }
     .banner{
-        padding-top: 0px;
+        padding-top: 8%;
         min-height: 500px;
      }
     .mainHeading{
@@ -176,7 +176,7 @@ overflow: hidden;
     }
     .ContentBanner{
         /* margin-top: 26%; */
-        padding-top:140px;
+        padding-top:26%;
         width: 100%;
     }
     .mainHeading{
