@@ -7,7 +7,6 @@ import telephone from "./icons/telephone.png"
 import logo from './icons/logo.png';
 import close from './icons/close (1).png';
 import "./popUp.css";
-import { Col, Container, Row } from "react-bootstrap"    
 import React, { useState } from 'react';
 import 'react-phone-number-input/style.css'; 
 import PhoneInput from 'react-phone-number-input';
