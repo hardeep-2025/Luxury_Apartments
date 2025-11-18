@@ -82,7 +82,7 @@ font-family: "montserrat-Bold";
     right: 1.5rem;
 }
 .closepng>img{
-
+cursor: pointer;
 }
 .phoneNoPopUp>input{
     border: none;

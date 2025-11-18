@@ -308,10 +308,10 @@ text-align: center;
 
 }
 
-.FooterFirstPart2ListStyle>ul>li>a:hover{
+.FooterFirstPart2ListStyle>ul>li:hover{
    font-weight: bolder;
     color: #293868;
-}.FooterFirstPart2ListStyle2>ul>li>a:hover{
+}.FooterFirstPart2ListStyle2>ul>li:hover{
     font-weight: bolder;
     color: #293868;
 }
