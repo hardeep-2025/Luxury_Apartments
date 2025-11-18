@@ -46,16 +46,15 @@
     }
     .gallery-images-list>li{
         width: 100%;
-        height: 200px !important;
+        height: 160px !important;
         grid-column-end: span  1!important;
         grid-row-end: span 1 !important;
     }
-    .gallerySection{
-        height: 280px;
-        margin-bottom: 42rem;
-        padding: 10px;
 
-    }
+    .gallery-images-list {
+    /* padding: 40px 0px; */
+    border-radius: 0px 123px;
+    cursor: pointer;}
 
 }
 
@@ -64,9 +63,9 @@
         height: 170px !important;
         width: 100%;
      }
-     .gallerySection{
+     /* .gallerySection{
         margin-bottom: 36rem;
-     }
+     } */
 }
 @media (max-width:425px){
         .gallerySection {
