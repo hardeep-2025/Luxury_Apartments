@@ -26,7 +26,7 @@ function FoodPlan(){
                       <div className={style.main}>
                         <div className={style.First}>
                              <h1 className={style.Head}>Unlock Exclusive Floor Plans  </h1>
-                    <button variant="primary" onClick={handleShowPOP} className={style.btn} >Enquire Now</button>
+                    <button variant="primary" onClick={handleShowPOP} className={style.btn} >Register Now for Early Access</button>
                   <Modal
                     show={showPop}
                     onHide={handleClosePOP}

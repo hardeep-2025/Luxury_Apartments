@@ -13,6 +13,7 @@
 .gallery-images-list{
     /* padding: 40px 0px; */
     border-radius: 0px 230px;
+    cursor: pointer;
 
 }
 
@@ -50,7 +51,7 @@
         grid-row-end: span 1 !important;
     }
     .gallerySection{
-        height: 340px;
+        height: 280px;
         margin-bottom: 42rem;
         padding: 10px;
 
@@ -66,4 +67,18 @@
      .gallerySection{
         margin-bottom: 36rem;
      }
+}
+@media (max-width:425px){
+        .gallerySection {
+            margin-bottom: 16rem;
+        }
+         .gallery-images-list>li{
+            height: 100px !important;
+         }
+    .GalleryImageCointer>img ,.GalleryImageCointer{
+        height: 100px !important;
+    }
+    .galleryContainer {
+        padding: 28px 0px;
+    }
 }

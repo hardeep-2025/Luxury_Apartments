@@ -66,11 +66,23 @@ font-family: "montserrat-Bold";
  margin-right: 2rem !important;
  margin-top: 7rem !important;
 }
+.modal-content {
+  width: 70% !important;
+}
 
 
 .closepng{
   align-items: end;
  width: 20px;
+}
+.imgContiner{
+    width: 100%;
+    text-align: end;
+    position: absolute;
+    right: 1.5rem;
+}
+.closepng>img{
+
 }
 .phoneNoPopUp>input{
     border: none;

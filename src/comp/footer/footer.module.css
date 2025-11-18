@@ -52,7 +52,7 @@ left: 88px;
 .FooterFirstPart2Head{
     font-family: "montserrat-bold";
 font-weight: 700;
-padding: 20px;
+padding: 20px 0px;
 font-size: 18px;
 line-height: 32px;
 color: #293868;
@@ -61,7 +61,7 @@ color: #293868;
 }
 .FooterFirstPart2ListDiv{
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
 }
 .FooterFirstPart2ListStyle>ul{
     padding-left:30px ;
@@ -95,7 +95,7 @@ letter-spacing: 0%;
     font-family: "montserrat-bold";
 font-weight: 700;
 font-size: 18px;
-padding: 20px;
+padding: 20px 0px;
 /* margin-top: 20px; */
 line-height: 32px;
 color: #293868;
@@ -164,7 +164,10 @@ text-align: center;
 
 
 } 
-@media (max-width:992px){
+.FooterFirstPart2ListStyle2{
+    margin-left: 30px;
+}
+@media (max-width:991px){
     .FooterFirstPar1{
         width: 40%;
     }
@@ -202,7 +205,7 @@ text-align: center;
 
 
 
-@media (max-width:768px){
+@media (max-width:767px){
     .FooterFirstPart{
         flex-direction: column;
         /* justify-content: center; */
@@ -260,6 +263,8 @@ text-align: center;
     .FooterThirdPart{
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
         padding: 6px 0px;
     }
     .FooterFirstPart3>div{

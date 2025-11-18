@@ -73,9 +73,9 @@ border: none;
         text-align: start;
     }
     .First{
-        margin-top: 30px;
+        margin-top: 40px;
         width: 50%;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         gap: 14px;
     }
     .btn{
@@ -96,11 +96,14 @@ border: none;
     .First{
         width: 100%;
         gap: 20px;
+        display: flex;
+        align-items: center;
     }
     .Head{
         font-size: 35px;
         line-height: 40px;
         width: 100%;
+        text-align: center;
     }
 
 .imgContainer>img{
@@ -117,7 +120,7 @@ border: none;
         margin: 20px 0px;
     }
     .Head{
-        font-size: 34px;
+        font-size: 28px;
     }
 }
 @media (max-Width:460px){

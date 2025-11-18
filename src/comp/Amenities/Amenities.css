@@ -17,7 +17,7 @@ margin-bottom: 50px;
 }
 
 .amenity-item{
-    width: 168px;
+    /* width: 168px; */
 height: 168px;
 opacity: 1;
 border-radius: 8px;
@@ -48,7 +48,7 @@ letter-spacing: 0%;
 text-align: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .amenitiesContanir{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -58,6 +58,9 @@ text-align: center;
     margin: 0 auto;
     place-items: center;
     }
+    .amenity-item{
+      width: 178px;
+    }
 }
 @media (max-width: 991px) {
     .amenitiesContanir{
@@ -65,7 +68,7 @@ text-align: center;
       grid-template-columns: repeat(3, 1fr);
     }
 } 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .amenitiesContanir{
       display: grid;
       grid-template-columns: repeat(2, 1fr);

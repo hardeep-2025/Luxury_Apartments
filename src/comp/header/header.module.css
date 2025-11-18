@@ -89,7 +89,7 @@ position: relative;
 font-family: "montserrat-Bold";
 font-weight: 700;
 font-size: 15px;
-line-height: 100%;
+/* line-height: 100%; */
 letter-spacing: 0%;
 color: #FFFFFF;
 cursor: pointer;
@@ -99,7 +99,7 @@ cursor: pointer;
 }
 .headerPhoneNoContainer{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     gap: 12px;
 }

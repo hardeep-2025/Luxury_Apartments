@@ -7,8 +7,14 @@ import youtube from "./footerImg/youtube.png"
 import facebook  from "./footerImg/facebook.png"
 import twitter from "./footerImg/twitter.png"
 import { BrowserRouter, Link } from 'react-router';
+import { useState } from 'react';
+import ScrolBack from '../../SrollBack';
 
 function Footer() {
+   const [show, setShow] = useState (false);
+  
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
   return (
 <>
 
@@ -24,19 +30,32 @@ function Footer() {
         <h6 className={Style.FooterFirstPart2Head}>Useful Links</h6>
         <div className={Style.FooterFirstPart2ListDiv}>
             <div className={Style.FooterFirstPart2ListStyle}><ul>
-              
-            <li><a href=" " >About</a></li>
-            <li><a href=" " >Key Highlights</a></li>
-            <li><a href=" " >Price List</a></li>
-            <li><a href=" " >Floor Plan</a></li>
+             <li onClick={handleClose} >
+                                     <ScrolBack to={"Aboutus"} offset={0} >About us</ScrolBack>
+                              </li>
+                                     <li  onClick={handleClose} >
+                                     <ScrolBack to={"keyHighlight"} offset={-70} >Key Highlights</ScrolBack>
+                                     </li>
+                                     <li  onClick={handleClose} >
+                                       <ScrolBack to={"priceList"} offset={-70} >Price List</ScrolBack>
+                                       </li>
+                                     <li  onClick={handleClose} >
+                                       <ScrolBack to={"floorPlan"} offset={-100} >Floor list</ScrolBack>                    </li>
+                                     
             </ul></div>
             <div className={Style.FooterFirstPart2ListStyle2}><ul>
-            <li><a href=" ">Amenities </a></li>
-            <li><a href=" ">Gallery</a></li>
-            <li><a href=" ">Connectivity</a></li>
-            <li> <a href=" ">Contact</a></li>
+              <li onClick={handleClose}>
+                                      <ScrolBack to={"Amenities"} offset={-70} >Amenities</ScrolBack> 
+                                      </li>
+            <li  onClick={handleClose} >
+                  <ScrolBack to={"gallery"} offset={-90} >Gallery</ScrolBack>                                       </li>
+                  <li  onClick={handleClose} >
+                   <ScrolBack to={"semlesConnectivity"} offset={-70} >Semless Connectivity</ScrolBack>                                      </li>
+                  <li  onClick={handleClose} >
+                <ScrolBack to={"ContactUs"} offset={-70} >Contact Us</ScrolBack></li>  
             </ul></div>
             </div>
+                  
     </div>
 
     <div className={Style.FooterFirstPart3}>

@@ -51,7 +51,7 @@ import { useState } from "react";
                 <div className={style.secoundContent} >
                     <div className={style.secoundContentHead}><h2 className={style.mainHading} >About the Project</h2> 
 
-                    <hr className={style.line} /></div>
+                   </div>
                     <div className={style.subContainer}  >
                     <div className={style.imgDivSet}>
                         <div className={style.imgCountainer}>

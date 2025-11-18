@@ -5,7 +5,7 @@ import catalog from "./icons/catalog.png"
 import money from "./icons/money.png"
 import telephone from "./icons/telephone.png"
 import logo from './icons/logo.png';
-import close from './icons/close.png';
+import close from './icons/close (1).png';
 import "./popUp.css";
 import { Col, Container, Row } from "react-bootstrap"    
 import React, { useState } from 'react';
@@ -34,8 +34,9 @@ function DataPopup({handleClosePOP}){
     return(<>
             
             <div className="popUpContiner"> 
-              
+              <div className="imgContiner">
               <img src={close} alt="" onClick={()=>{handleClosePOP()} }className="closepng" />
+              </div>
                <div className="popUplogo" ><img src={logo} alt="logo" /></div>
                <div className="popupHeadingAndPara">
                 <h1>Enquire Now to Know More</h1>
