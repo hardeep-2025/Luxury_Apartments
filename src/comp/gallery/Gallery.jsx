@@ -1,14 +1,14 @@
    import React, { useState } from 'react';
 import './Gallery.css';
 import img1 from './imhGallery/3d-rendering-modern-dining-room-living-room-with-luxury-decor (1) 1.png'
-import img2 from './imhGallery/b3a35e8dc7bd5222860d2ff0824ea4dab5c062b3.jpg'
-import img3 from './imhGallery/5983638b9afa8a9f4b2ab9aaa5a3142a231f68da.jpg'
-import img4 from './imhGallery/vecteezy_luxury-bedroom-with-modern-design-and-comfortable-bedding_32942505 1 (2).png'
+import img2 from './imhGallery/5983638b9afa8a9f4b2ab9aaa5a3142a231f68da.jpg'
+import img3 from './imhGallery/vecteezy_3d-render-of-modern-kitchen-with-black-and-white-walls_23005495 1.png'
+import img4 from './imhGallery/b3a35e8dc7bd5222860d2ff0824ea4dab5c062b3.jpg'
 import img5 from './imhGallery/vecteezy_modern-living-room-illustration_22336948 1.png'
 import img6 from './imhGallery/vecteezy_modern-living-room-illustration_22337131 1.png'
 import img7 from './imhGallery/vecteezy_modern-living-room-illustration_22385926 1.png'
 import img8 from './imhGallery/vecteezy_scandinavian-classic-white-kitchen-with-wooden-details_21994269 1.png'
-import img9 from './imhGallery/vecteezy_modern-living-room-illustration_22336948 1.png'
+import img9 from './imhGallery/vecteezy_luxury-bedroom-with-modern-design-and-comfortable-bedding_32942505 1 (2).png'
 import "react-photo-album/rows.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import { Col, Container, Row } from 'react-bootstrap';
